@@ -32,6 +32,13 @@
               </ol>
 
               Unless otherwise specified, I will run your solutions on either a Nexus 5 running Android 6.0 or a Nexus 7 running Android 6.0.
+              For most projects you should:
+                  <ul>
+                    <li>Check Permissions, especially in terms of gradle settings and test targets, you want the latest SDKs ? Then please implement runtime permissions</li>
+                    <li>Perform error checks! Do not dereference null objects.</li>
+                    <li>Test on a clean install!</li>
+                    <li>Use preference change listeners rather than fetch the pref whenever its needed</li>
+                  </ul>
             </tr>
 
             <tr>
@@ -57,9 +64,10 @@
                
                <strong><a href="https://github.com/CNUClasses/Project2_Intents.git"> Project 2</a></strong><br>
                   <strong><a href="https://github.com/CNUClasses/Project2_Intents/blob/master/Project%202%20-%20Implicit%20intents-bitmap%20manipulation-Toolbar.pdf"> Project 2 description</a></strong><br>
-                  <strong><a href="https://github.com/CNUClasses/Project2_Intents/blob/master/P2_skel.zip"> A skeleton project</a> Fill in the required bits</strong><br>
+                  <strong><a href="https://github.com/CNUClasses/Project2_Solution_color_SKELETON.git"> A skeleton project</a> Fill in the required bits</strong><br>
+
                   <strong style="color: #cc0000">
-                  If you like you may work with a partner on this project.<br>
+                  If you like, you may work with a partner on this project.<br>
                   Test your project on multiple screen sizes please.  I want it to look good on a Nexus 5, 7 and 10.  This means no absolute positioning of elements (particularly the camera button!)<br>
                   If you are using the same block of code more than once, refactor to a function please<br>
                   Please use constants instead of magic numbers.<br>
