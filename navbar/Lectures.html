@@ -224,17 +224,13 @@
                    
             </td>
             <td class="style_white ">
-                <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git">DEPRECATED AS OF ANDROID R BUT STILL WORKS: Demo of AsyncTask<br/></a> Attaching and detaching it's host activity, and using onRetainNonConfigurationInstance</strong>
+                <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git">Demo of AsyncTask - homerolled solution<br/></a> Attaching and detaching it's host activity, and using onRetainNonConfigurationInstance(DEPRECATED AS OF ANDROID R: onRetainNonConfigurationInstance usage no longer works from 29 on)</strong>
                 <BR>
-                <strong><a href="https://github.com/CNUClasses/AsyncTask_simple.git">A BETTER WAY: Demo of AsyncTask<br/></a>  Using a ViewModel to host it</strong><br>
-                <strong><a href="https://github.com/CNUClasses/ViewModel_And_LiveData.git">THE EVEN BETTER (AND RECCOMENDED) WAY: Demo of AsyncTask<br/></a>  Using a ViewModel and LiveData</strong></a> Have the ACtivity listen for changes in livedataobjects in the ViewModel.  These objects correspond to views in the Activity, but the AsyncTask and the ViewModel have no reference to the Activity.  The Activity is updated by Observers listening for changes in the model.<br>
-                
-     
-                
-             
+                <strong><a href="https://github.com/CNUClasses/AsyncTask_simple.git">Demo of AsyncTask - a better but still risky solution <br/></a>  Using a ViewModel to host it, but must correctly attach and detach AsyncTasks reference to host activity or the GC cannot colect activity until thread exits</strong><br>
+                <strong><a href="https://github.com/CNUClasses/ViewModel_And_LiveData.git">Demo of AsyncTask - the best way<br/></a>  Using a ViewModel and LiveData</strong></a> Have the ACtivity listen for changes in livedataobjects in the ViewModel.  These objects correspond to views in the Activity, but the AsyncTask and the ViewModel have no reference to the Activity.  The Activity is updated by Observers listening for changes in the model.  No chance of leaking the activity<br>
             </td>
         </tr>
-<!--
+
         <tr>
             <td class="style_white "><em>8</em></td>
             <td class="style_white "> 
@@ -256,12 +252,11 @@
                
             </td>
         </tr>
-
+<!--
         <tr>
             <td class="style_white "><em>9</em></td>
             <td class="style_white ">  
-                <strong><a href="https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted">Android 8: Cleartext HTTP traffic not permitted</a></strong> Whelp just to confuse things, as of API 28 you cannot default download cleartext network data, this is how you fix it.  Or use https.<br/>
-                
+                 
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_9/9Networking2.pdf">Networking with http</a></strong> <br/>
 
                 <strong><a href="https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted">Android 8: Cleartext HTTP traffic not permitted</a></strong> Android API 28 has made it difficult to install plaintext networking apps, here is a workaround.  Also check the networking apps below for an implementation of this workaround<br/>
