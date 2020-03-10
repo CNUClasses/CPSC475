@@ -227,13 +227,15 @@
                 <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git">Demo of AsyncTask - homerolled solution<br/></a> Attaching and detaching it's host activity, and using onRetainNonConfigurationInstance(DEPRECATED AS OF ANDROID R: onRetainNonConfigurationInstance usage no longer works from 29 on)</strong>
                 <BR>
                 <strong><a href="https://github.com/CNUClasses/AsyncTask_simple.git">Demo of AsyncTask - a better but still risky solution <br/></a>  Using a ViewModel to host it, but must correctly attach and detach AsyncTasks reference to host activity or the GC cannot colect activity until thread exits</strong><br>
-                <strong><a href="https://github.com/CNUClasses/ViewModel_And_LiveData.git">Demo of AsyncTask - the best way<br/></a>  Using a ViewModel and LiveData</strong></a> Have the ACtivity listen for changes in livedataobjects in the ViewModel.  These objects correspond to views in the Activity, but the AsyncTask and the ViewModel have no reference to the Activity.  The Activity is updated by Observers listening for changes in the model.  No chance of leaking the activity<br>
+                <strong><a href="https://github.com/CNUClasses/ViewModel_And_LiveData.git">Demo of AsyncTask - the reccomended way BUT very verbose and complex<br/></a>  Using a ViewModel and LiveData</strong></a> Have the ACtivity listen for changes in livedataobjects in the ViewModel.  These objects correspond to views in the Activity, but the AsyncTask and the ViewModel have no reference to the Activity.  The Activity is updated by Observers listening for changes in the model.  No chance of leaking the activity<br>
             </td>
         </tr>
 
         <tr>
             <td class="style_white "><em>8</em></td>
             <td class="style_white "> 
+                <strong><a href="https://www.youtube.com/watch?v=nL0k2usU7I8">Super simple no fragments ViewPager</a></strong> 15 minute video walkthrough, only thing not mentioned that you need to do is add implementation 'com.android.support:support-v4:26.0.0' to the projects build.gradle file.<br/>
+
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/AsyncTask-ProgressdialogInClassDemo.pdf" style="color: #00cc00">In Class Lab - Async Task </a></strong> Using an Async task to run a background process, disabling the rest of the UI with an indeterminate progress dialog. Plus how to cancel the async task.<br/>
                
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/Android Gradle- Minimum Knowledge guide.pdf">Android Gradle- Minimum Knowledge guide</a></strong> What are all these build.gradle files?  How do I update/upgrade/switch appcomp/compilesdk libraries? A brief treatment of a complex build system.<br/>
@@ -353,8 +355,7 @@
             <td class="style_white ">  
                 <strong ><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_13/Location.pdf" >Location based services</a></strong> <br/>
                 <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_13/In-Class-Lab_Making_A_Google_Maps_App.pdf" style="color: #00cc00">In Class Lab: Making a Google Maps App</a></strong> <br/>
-                <strong><a href="https://www.youtube.com/watch?v=nL0k2usU7I8">Super simple no fragments ViewPager</a></strong> 15 minute video walkthrough, only thing not mentioned that you need to do is add implementation 'com.android.support:support-v4:26.0.0' to the projects build.gradle file.<br/>
-             </td>
+              </td>
             <td class="style_white ">
             
             <strong ><a href="https://github.com/CNUClasses/14_Location.git" >Location Based services</a></strong> Using GPS, WiFi, Cellular and other location based services.  Also demonstrates using geoCoder to map from GPS coordinates to address and vice versa.  Also correctly implements dynamicaly requested user permissions.<br/> 
