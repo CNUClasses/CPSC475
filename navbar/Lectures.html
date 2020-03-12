@@ -234,10 +234,18 @@
         <tr>
             <td class="style_white "><em>8</em></td>
             <td class="style_white "> 
-                <strong><a href="https://www.youtube.com/watch?v=nL0k2usU7I8">Super simple no fragments ViewPager</a></strong> 15 minute video walkthrough, only thing not mentioned that you need to do is add implementation 'com.android.support:support-v4:26.0.0' to the projects build.gradle file.<br/>
-
+                <strong><a href="https://sourcemaking.com/design_patterns/observer">Observer design pattern</a></strong> Decouples components, a subject manages data and notifies observers when that data changes, the heart of LiveView data<br/>
+                <strong><a href="https://developer.android.com/topic/libraries/architecture/livedata" >LiveData overview</a></strong> How Android uses the observer software design pattern to host all relevant data in the ViewModel, automatically update the Activity when the data in the ViewModel changes, and decouple the ViewModel from the Activity. 
+                Using this method you don't have to worry about leaking the activity when its destroyed since threads no longer hold a reference to it.  The android framework manages all state adjustments associated with Activity configuration changes. 
+                <br>This operates much like a preference change listener which is notified when a change is made to a preference in a preference activity.<br/>
+               
+                
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/AsyncTask-ProgressdialogInClassDemo.pdf" style="color: #00cc00">In Class Lab - Async Task </a></strong> Using an Async task to run a background process, disabling the rest of the UI with an indeterminate progress dialog. Plus how to cancel the async task.<br/>
                
+                
+                <strong><a href="https://www.youtube.com/watch?v=nL0k2usU7I8">Super simple no fragments ViewPager</a></strong> 15 minute video walkthrough, only thing not mentioned that you need to do is add implementation 'com.android.support:support-v4:26.0.0' to the projects build.gradle file.<br/>
+
+                
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/Android Gradle- Minimum Knowledge guide.pdf">Android Gradle- Minimum Knowledge guide</a></strong> What are all these build.gradle files?  How do I update/upgrade/switch appcomp/compilesdk libraries? A brief treatment of a complex build system.<br/>
      
             
