@@ -226,9 +226,7 @@
             <td class="style_white ">
                 <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git">Demo of AsyncTask - homerolled solution<br/></a> Attaching and detaching it's host activity, and using onRetainNonConfigurationInstance(DEPRECATED AS OF ANDROID R: onRetainNonConfigurationInstance usage no longer works from 29 on)</strong>
                 <BR>
-                <strong><a href="https://github.com/CNUClasses/AsyncTask_simple.git">Demo of AsyncTask - a better but still risky solution <br/></a>  Using a ViewModel to host it, but must correctly attach and detach AsyncTasks reference to host activity or the GC cannot colect activity until thread exits</strong><br>
-                <strong><a href="https://github.com/CNUClasses/ViewModel_And_LiveData.git">Demo of AsyncTask - the reccomended way BUT very verbose and complex<br/></a>  Using a ViewModel and LiveData</strong></a> Have the ACtivity listen for changes in livedataobjects in the ViewModel.  These objects correspond to views in the Activity, but the AsyncTask and the ViewModel have no reference to the Activity.  The Activity is updated by Observers listening for changes in the model.  No chance of leaking the activity<br>
-            </td>
+             </td>
         </tr>
 
         <tr>
@@ -243,18 +241,16 @@
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/AsyncTask-ProgressdialogInClassDemo.pdf" style="color: #00cc00">In Class Lab - Async Task </a></strong> Using an Async task to run a background process, disabling the rest of the UI with an indeterminate progress dialog. Plus how to cancel the async task.<br/>
                
                 
-                <strong><a href="https://www.youtube.com/watch?v=nL0k2usU7I8">Super simple no fragments ViewPager</a></strong> 15 minute video walkthrough, only thing not mentioned that you need to do is add implementation 'com.android.support:support-v4:26.0.0' to the projects build.gradle file.<br/>
-
-                
-                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/Android Gradle- Minimum Knowledge guide.pdf">Android Gradle- Minimum Knowledge guide</a></strong> What are all these build.gradle files?  How do I update/upgrade/switch appcomp/compilesdk libraries? A brief treatment of a complex build system.<br/>
-     
-            
+             
                 <!-- Maybe not this time 
                     <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_8/Classoutline_install_project_adb_usage_from_commandline_thread_sync .pdf">Outline</a></strong> Project 3 overview, using adb from the command line<br/> -->
 
                 </td>
             <td class="style_white ">
-                    <strong><a href="https://github.com/CNUClasses/MyApplication5.git" style="color: #00cc00">In Class Lab - Async Task Solution</a>></strong> Demo of asynctask, with a progress dialog to disable UI interaction, handling activity rotations by attaching and detaching to/from a host activity, and using onRetainCustomNonConfigurationInstance. <br/>
+                <strong><a href="https://github.com/CNUClasses/AsyncTask_simple.git" style="color: #00cc00">In Class Lab -Demo of AsyncTask - a better but still risky solution <br/></a>  Using a ViewModel to host it, but must correctly attach and detach AsyncTasks reference to host activity or the GC cannot colect activity until thread exits</strong><br>
+                <strong><a href="https://github.com/CNUClasses/ViewModel_And_LiveData.git" style="color: #00cc00">In Class Lab -Demo of AsyncTask - the reccomended way BUT very verbose and complex<br/></a>  Using a ViewModel and LiveData</strong></a> Have the ACtivity listen for changes in livedataobjects in the ViewModel.  These objects correspond to views in the Activity, but the AsyncTask and the ViewModel have no reference to the Activity.  The Activity is updated by Observers listening for changes in the model.  No chance of leaking the activity<br>
+
+                    <!-- <strong><a href="https://github.com/CNUClasses/MyApplication5.git" style="color: #00cc00">In Class Lab - Async Task Solution</a>></strong> Demo of asynctask, with a progress dialog to disable UI interaction, handling activity rotations by attaching and detaching to/from a host activity, and using onRetainCustomNonConfigurationInstance. <br/> -->
                     <!-- <strong><a href="https://github.com/CNUClasses/MyApplication5.git">Async Task 2</a></strong> Another demo of asynctask, with a determinate progressbar using asynctask publish progress to set the amount completed.<br/> -->
                
             </td>
@@ -298,8 +294,15 @@
         </tr> 
 <!--
         <tr>
-            <td class="style_white "><em>10</em></td>
+            <td class="style_white "><em>11</em></td>
             <td class="style_white ">  
+                NEED IMAGE DOWNLOAD!
+                <strong><a href="https://www.youtube.com/watch?v=nL0k2usU7I8">Super simple no fragments ViewPager</a></strong> 15 minute video walkthrough, only thing not mentioned that you need to do is add implementation 'com.android.support:support-v4:26.0.0' to the projects build.gradle file.<br/>
+
+                
+                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/Android Gradle- Minimum Knowledge guide.pdf">Android Gradle- Minimum Knowledge guide</a></strong> What are all these build.gradle files?  How do I update/upgrade/switch appcomp/compilesdk libraries? A brief treatment of a complex build system.<br/>
+     
+
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_9/9-1_ListActivity.pdf">ListActivity and ListView</a></strong> MVC pattern, data adapters (again),  Built in and custom adapters, getView(), and convertview and viewholder optimizations, list sorting.
  
                 <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_10/Creating_a_ListActivity_with_Threads_ConvertView_and_Viewholder_InClassLab.pdf" style="color: #00cc00">In Class Lab: A ListActivity with threads, Convertview optimizations and ViewHolder pattern</a></strong> A Simple demo based on ListActivity, and demo of how to retreive row content using threads.  Goes with project to right <br/> 
