@@ -279,7 +279,6 @@
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_9/9Networking2.pdf">Networking with http</a></strong> <br/>
                 <strong><a href="https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted">Android 8: Cleartext HTTP traffic not permitted</a></strong> Android API 28 has made it difficult to install networking apps that download plaintext (http verses https) plaintext, here is a workaround if you absolutely have to use it, otherwise use https: since most websites default to that anyway.<br/>
 <!-- skip for coronavirus semester 
-                  <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_9/9_Android_create_and_use_a_library:.pdf">OPTIONAL CONTENT: How to share utility libraries between projects.</a></strong> How to share a single copy of a library amongst multiple projects.  Its harder than it should be.  <a href="https://github.com/CNUClasses/TEST_networking_lib.git">TEST_networking_lib </a> is a project that hosts the library networking_lib and a tester, <a href="https://github.com/CNUClasses/LINK_networking_lib.git">LINK_networking_lib </a> is a project that links to networking_lib.  Its a bit hoaky but better than googles way of making a copy of a library in projects that need it (a maintenence nightmare!)<br/>
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_9/9_Samples_apps.pdf">Built in Android Sample Apps!</a></strong> How to use built in Android sample apps as a template for your project.<br/>
  -->
             </td> 
@@ -287,17 +286,28 @@
                 <strong style="color: #cc0000">NOTE: All network traffic should be done on a seperate thread</strong><br/>
                 <strong><a href="https://github.com/CNUClasses/9_NetworkCheck.git">9_NetworkCheck</a></strong> Simple boolean class to determine if network and/or WiFi is reachable <br/>
                 <strong><a href="https://github.com/CNUClasses/9_ParseJSON.git">9_ParseJSON</a></strong> Simple nework app. Checks for network access Then launches a thread to retreive a chunk of json data, then parses and displays this data using jsonObject<br/>
-<!-- skip for coronavirus semester 
-                <strong><a href="https://github.com/CNUClasses/TEST_networking_lib.git">TEST_networking_lib </a></strong> How to use ConnectivityCheck, DownloadTask and WebImageView.  Lots of networking needs right here<br/>
--->
+
+               
             </td>
         </tr> 
-<!--
+
         <tr>
             <td class="style_white "><em>11</em></td>
             <td class="style_white ">  
-                NEED IMAGE DOWNLOAD!
-                <strong><a href="https://www.youtube.com/watch?v=nL0k2usU7I8">Super simple no fragments ViewPager</a></strong> 15 minute video walkthrough, only thing not mentioned that you need to do is add implementation 'com.android.support:support-v4:26.0.0' to the projects build.gradle file.<br/>
+                Test 3/31<BR>
+                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_9/9_Android_create_and_use_a_library:.pdf">Optional Content: How to share utility libraries between projects.</a></strong> How to share a single copy of a library amongst multiple projects.  Its harder than it should be.  <a href="https://github.com/CNUClasses/TEST_networking_lib.git">TEST_networking_lib </a> is a project that hosts the library networking_lib and a tester, <a href="https://github.com/CNUClasses/LINK_networking_lib.git">LINK_networking_lib </a> is a project that links to networking_lib.  Its a bit hoaky but better than googles way of making a copy of a library in projects that need it (a maintenence nightmare!)<br/>          
+            </td>
+            <td class="style_white ">
+                <strong><a href="https://github.com/CNUClasses/TEST_networking_lib.git">Networking, how to download text and images over http(s)</a></strong> How to use ConnectivityCheck, DownloadTask and WebImageView.  Lots of networking needs right here<br/>
+               
+                             
+            </td>
+        </tr> 
+
+ <!--       <tr>
+            <td class="style_white "><em>11</em></td>
+            <td class="style_white "> 
+                 <strong><a href="https://www.youtube.com/watch?v=nL0k2usU7I8">Super simple no fragments ViewPager</a></strong> 15 minute video walkthrough, only thing not mentioned that you need to do is add implementation 'com.android.support:support-v4:26.0.0' to the projects build.gradle file.<br/>
 
                 
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/Android Gradle- Minimum Knowledge guide.pdf">Android Gradle- Minimum Knowledge guide</a></strong> What are all these build.gradle files?  How do I update/upgrade/switch appcomp/compilesdk libraries? A brief treatment of a complex build system.<br/>
@@ -306,21 +316,7 @@
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_9/9-1_ListActivity.pdf">ListActivity and ListView</a></strong> MVC pattern, data adapters (again),  Built in and custom adapters, getView(), and convertview and viewholder optimizations, list sorting.
  
                 <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_10/Creating_a_ListActivity_with_Threads_ConvertView_and_Viewholder_InClassLab.pdf" style="color: #00cc00">In Class Lab: A ListActivity with threads, Convertview optimizations and ViewHolder pattern</a></strong> A Simple demo based on ListActivity, and demo of how to retreive row content using threads.  Goes with project to right <br/> 
-                
-                        
-            </td>
-            <td class="style_white ">
-                <strong><a href="https://github.com/CNUClasses/10_ListView_Examples.git">ListView and List Activity examples</a></strong> <br/>  
- 
-                <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/ListActivity_threads_classlab.git" style="color: #00cc00">In Class Lab: A ListActivity with threads</a></strong> A Simple demo based on ListActivity, and demo of how to retreive row content using threads.  Goes with paper to left <br/> 
-                
-                            
-            </td>
-        </tr> 
-
-        <tr>
-            <td class="style_white "><em>11</em></td>
-            <td class="style_white ">  
+            
 
                 <strong ><a href="https://github.com/codepath/android_guides/wiki/Using-the-RecyclerView" >RecyclerView - Androids ListView replacement </a></strong>  a comprehensive tutorial<br/> 
                 <strong ><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_11/11 Sensing_and_Sensors.pdf" >Sensors Lecture</a></strong><br/> 
@@ -332,6 +328,11 @@
            
             </td>
             <td class="style_white ">
+                               <!-- <strong><a href="https://github.com/CNUClasses/10_ListView_Examples.git">ListView and List Activity examples</a></strong> <br/>  
+ 
+                <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/ListActivity_threads_classlab.git" style="color: #00cc00">In Class Lab: A ListActivity with threads</a></strong> A Simple demo based on ListActivity, and demo of how to retreive row content using threads.  Goes with paper to left <br/> 
+                
+
                  <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/ListActivity_threads_classlab.git" style="color: #00cc00">A list using RecyclerView </a></strong> Equivelant to above 'A ListActivity with threads' only using a RecyclerView rather than a ListActivity<br/> 
                 
                 <strong ><a href="https://github.com/CNUClasses/11_GetSensorList1.git" >Sensors - List All</a></strong> Use SensorManager system service to query for complete sensor list, some sensor characteristics, and display this information in a listview. <br/> 
