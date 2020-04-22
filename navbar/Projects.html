@@ -108,7 +108,14 @@
                <td class="style_white ">
                 
                   <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/projects/Project4_ViewPager2/Project4_Pets_multithreaded_network_application_viewpager2.pdf">Project Description </a></strong>A multithreaded networked application that uses ViewPager2 and a RecyclerView.Adapter.  A port of project 3. <br>
-                  
+                  <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_12/Download_Image_Task.java">A base class to download an image using https</a></strong>
+                     If successful, the Image is returned as a BitMap.  Subclass this class, and check to make sure that the Bitmap received is the same as what was 
+                     originally requested by the Viewholder. Assummig it is (and the returned Bitmap is named result, and the ImageView is named iv) use the following call to set the Bitmap to the ImageView; iv.setImageBitmap(result)
+                     <BR>
+                        <br>
+                        <strong>Call notifyDataSetChanged() on the adapter you are using for ViewPager2 whenever the underlying data changes. </strong> When this project first starts you should display a single placeholder page. After which you should download JSON from your selected website. 
+                           Once you parse this JSON you have a different number of pages to display.   This is when you should call notifyDataSetChanged() on the adapter you are using for ViewPager2 <br>
+
                </td>
            </tr>
            <tr>
