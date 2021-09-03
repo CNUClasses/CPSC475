@@ -82,7 +82,12 @@
             
             <strong><a href="https://github.com/CNUClasses/2_XML_to_java_linkage.git">How XML layout and Java interact</a> </strong> 2 ways to set a listener (in this case an onClick listener on a button); a pure java anonymous listener, and an onClick listener defined in XML (see Mainactivity.java and ) <br />
             <strong><a href="https://github.com/CNUClasses/2_Activitylifecycle.git">Activity Lifecycle</a></strong> In Android Studio, type alt-6 to bring up logcat and view events.  <br />
-            <strong><a href="https://github.com/CNUClasses/2_Bundles.git">Bundles</a></strong> Temporary state saving for rotations, falling down the activity stack etc. Also used to pass data between Activities.<br />
+            <B>How to ensure data survives Activity rotations</B><br>
+            <strong><a href="https://github.com/CNUClasses/2_Bundles.git">Bundles</a></strong> Usefull for saving serializable data (any object that implements the Serializable interface such as Integers, Bools, Lists, Arrays etc...). Bundles provide temporary state saving for rotations, falling down the activity stack etc. Also used to pass data between Activities.<br />
+           
+            <strong><a href="https://github.com/CNUClasses/SingletonDemo.git">Singleton design pattern</a></strong> 
+            Some objects cannot be serialized in a bundle (like a database connection) so they cannot use bundles to survive device rotations.  Use a singleton to hold these types of objects.  Once created, the singleton survives activity destruction and reconstruction.<br />
+
             
             
             </td>
