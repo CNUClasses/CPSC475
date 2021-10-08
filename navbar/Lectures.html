@@ -238,7 +238,7 @@
                     Using the singleton to manage UI button state while activity is torn down and recreated<br>
                     Also demos what happens to UI when a long running task takes place on main thread, triggers a ANR(Application Not Responding)<br>
 
-                    <strong><a href="https://github.com/CNUClasses/7_Thread.git" style="color: #00cc00">In Class Lab-Solution 2- using java thread and Singleton. </a>Same as above except using a java Thread instead of an AsyncTask<br>
+                    <strong><a href="https://github.com/CNUClasses/7_Thread.git" style="color: #00cc00">In Class Lab-Solution 2- using java thread and Singleton. </a></strong>Same as above except using a java Thread instead of an AsyncTask<br>
                     
                 <BR>
              </td>
@@ -255,10 +255,10 @@
                 Using this method you don't have to worry about leaking the activity when its destroyed since threads no longer hold a reference to it.  The android framework manages all state adjustments associated with Activity configuration changes. 
                 <br>This operates much like a preference change listener which is notified when a change is made to a preference in a preference activity.<br/>
                
-                
-                <!--Maybe not this time <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/AsyncTask-ProgressdialogInClassDemo.pdf" style="color: #00cc00">In Class Lab - Async Task </a></strong> Using an Async task to run a background process, disabling the rest of the UI with an indeterminate progress dialog. Lab evolves to using ViewModel and LiveData<br/> -->
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/Asynctask_InclassDemo_WhyViewModel_andLivedata.pdf" >Why use ViewModel and LiveData</a></strong> Outlines the advantages of using ViewModel, Livedata and Java Threads- specifically they decouple MainActivity from ViewModel at the expense of some complexity<br/>
-
+               
+                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/AsyncTask-ProgressdialogInClassDemo.pdf" style="color: #00cc00">In Class Lab - Async Task </a></strong> Using an Async task to run a background process, disabling the rest of the UI with an indeterminate progress dialog. Lab evolves to using ViewModel and LiveData and Java Threads.  The prefered solution (the third project to the right)<br/>
+ 
                 <!-- Maybe not this time 
                     <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_8/Classoutline_install_project_adb_usage_from_commandline_thread_sync .pdf">Outline</a></strong> Project 3 overview, using adb from the command line<br/> -->
 
@@ -281,9 +281,9 @@
                 <br><br>
 
                 <strong><a href="https://github.com/CNUClasses/ViewModel_LiveData_Thread.git" style="color: #00cc00">In Class Lab -Demo using ViewModel, LiveData and Java Thread - the reccomended Google way<br/></a> </strong> 
-                 Same as above except using plain old Java Threads<br>
+                Same as above except using a java Thread instead of an AsyncTask<br>
 
-                    <!-- <strong><a href="https://github.com/CNUClasses/MyApplication5.git" style="color: #00cc00">In Class Lab - Async Task Solution</a>></strong> Demo of asynctask, with a progress dialog to disable UI interaction, handling activity rotations by attaching and detaching to/from a host activity, and using onRetainCustomNonConfigurationInstance. <br/> -->
+                    <!-- DEPRECATED do not use again <strong><a href="https://github.com/CNUClasses/MyApplication5.git" style="color: #00cc00">In Class Lab - Async Task Solution</a>></strong> Demo of asynctask, with a progress dialog to disable UI interaction, handling activity rotations by attaching and detaching to/from a host activity, and using onRetainCustomNonConfigurationInstance. <br/> -->
                     <!-- <strong><a href="https://github.com/CNUClasses/MyApplication5.git">Async Task 2</a></strong> Another demo of asynctask, with a determinate progressbar using asynctask publish progress to set the amount completed.<br/> -->
              
             </td>
