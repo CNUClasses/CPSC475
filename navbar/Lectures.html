@@ -376,11 +376,11 @@
  
             </td>
         </tr> 
-<!--        <tr>
+        <tr>
             <td class="style_white "><em>13</em></td>
             <td class="style_white ">  
             <!-- REWRITE services and broadcast receivers, consider API restrictions on broadcast receivers, take advantage of Jobscheduler --> 
- <!--           <strong><a href="https://developer.android.com/guide/background">Android- Guide to background processing</a></strong> Which to use? DownloadManager, Service, ForegroundManager, AlarmManager? This guide helps you choose. <br/>
+           <strong><a href="https://developer.android.com/guide/background">Android- Guide to background processing</a></strong> Which to use? DownloadManager, Service, ForegroundManager, AlarmManager? This guide helps you choose. <br/>
             <strong><a href="https://developer.android.com/guide/components/broadcasts">Android Broadcast Receivers - Overview</a></strong> Note broadcast changes since Android 8.0  (API 26), specifically manifest declared broadcast receiver restrictions. <br/>
             <strong><a href="https://developer.android.com/guide/components/services">Services - Overview</a></strong> <br/>
 
@@ -399,22 +399,24 @@
             <!--
             <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_12/12_Project_5_How_to.pdf">Overview of the final project</a></strong> <br/>
             -->
-            <!-- <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_12/In_Class_Lab-Broadcast_Receiver_Service_SMS.pdf" style="color: #00cc00">In Class Lab: A Broadcast Receiver that is triggered by the receipt of an SMS message.  It then starts a service which checks the SMS message for a particular phrase.  Design pattern similar to that used by 'find my phone' apps.  Many ethically questionable uses. <br/>   -->
+         <!-- <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_12/In_Class_Lab-Broadcast_Receiver_Service_SMS.pdf" style="color: #00cc00">In Class Lab: A Broadcast Receiver that is triggered by the receipt of an SMS message.  It then starts a service which checks the SMS message for a particular phrase.  Design pattern similar to that used by 'find my phone' apps.  Many ethically questionable uses. <br/> -->
 
- <!--            <strong ><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_13/Location.pdf" >Location based services</a></strong> <br/>
+            <strong ><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_13/Location.pdf" >Location based services</a></strong> <br/>
                 <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_13/In-Class-Lab_Making_A_Google_Maps_App.pdf" style="color: #00cc00">In Class Lab: Making a Google Maps App</a></strong> <br/>
             </td>
             <td class="style_white ">
-                <strong ><a href="https://github.com/CNUClasses/13_BR_Android_AirplaneMode_receive.git" >Broadcast Receivers</a></strong> Broadcast Receiver that responds to device going in/out of airplane mode or having a power cord plugged in or unplugged.   <br/> 
-                  <strong ><a href="https://github.com/CNUClasses/12_BR_Service_Alarm_Noti_Sound.git " >BR_Service_Alarm_Noti_Sound</a></strong> Click a button to launch a broadcast receiver, which starts a service, which sends a notification and then barks like a dog<br/>   
-                <!-- <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/12_InClassLab_BR.git" style="color: #00cc00">In Class Lab: Solution.  <br/>  -->
+                <strong ><a href="https://github.com/CNUClasses/13_BR_Android_AirplaneMode_receive.git" >Broadcast Receivers - system, manifest registered</a></strong> Responds to device going in/out of airplane mode or having a power cord plugged in or unplugged. NOTE: Will not work if you target API's > 25 due to increased Android restrictions on manifest registered receivers.   <br/> 
+                <strong ><a href="https://github.com/CNUClasses/13_BR_DynamicRegistered.git " >Broadcast Receiver - custom, dynamically registered</a></strong> Can only be invoked if App is running<br/>   
+                <strong ><a href="https://github.com/CNUClasses/12_BR_Service_Alarm_Noti_Sound.git " >Broadcast Receiver, Service, Notification, Sound</a></strong> Click a button to launch a broadcast receiver, which starts a service, which sends a notification and then barks like a dog<br/>   
+ 
+                  <!-- <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/12_InClassLab_BR.git" style="color: #00cc00">In Class Lab: Solution.  <br/>  --> 
 
-<!--            <strong ><a href="https://github.com/CNUClasses/14_Location.git" >Location Based services</a></strong> Using GPS, WiFi, Cellular and other location based services.  Also demonstrates using geoCoder to map from GPS coordinates to address and vice versa.  Also correctly implements dynamicaly requested user permissions.<br/> 
+            <strong ><a href="https://github.com/CNUClasses/14_Location.git" >Location Based services</a></strong> Using GPS, WiFi, Cellular and other location based services.  Also demonstrates using geoCoder to map from GPS coordinates to address and vice versa.<br/> 
             <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/MapsApp.git" style="color: #00cc00">Google Maps Demo Project</a></strong> Make sure you go to google_maps_api.xml file and read directions on aquiring a key to access map tiles!<br/> 
                  
             </td>
         </tr> 
-        <tr>
+<!--        <tr>
             <td class="style_white "><em>14,15</em></td>
             <td class="style_white "> 
                 <b>Tuesday  4/20 - Graduate Student Presentation - Anne Haley  - Android Arcore Augmented Reality </b><br>
