@@ -17,20 +17,16 @@
          <table style="width: 100%" class="style_noborder ">
 	     <tr>
                <td class="style_emphasize " colspan="3">    
-               <strong>Please clean your project then zip the containing folder, then submit the zip to scholar. </strong><br> 
-
-              Instructions for cleaning (from <a href="https://stackoverflow.com/questions/28581211/how-to-project-clean-in-android-studio"> Stack Overflow</a> )
-              <br>
-              
+                     
               <strong>In order to compile your project I will;</strong>
               <ol>
-              <li>Unzip it</li>
+              <li>Clone it</li>
               <li>In Android Studio I will choose File->New->Import Project and then select your settings.gradle file.  (This will rebuild iml and idea files that work on my install of Android Studio)</li>
               </ol>
              For most projects you should:
                   <ul>
                     <li>Check Permissions, especially in terms of gradle settings and test targets, you want the latest SDKs ? Then please implement runtime permissions</li>
-                    <li>Perform error checks! Do not dereference null objects.</li>
+                    <li>Perform error checks! Do not dereference null objects if using Java!</li>
                     <li>Test on a clean install!</li>
                     <li>Use preference change listeners rather than fetch the pref whenever its needed</li>
                   </ul>
@@ -41,7 +37,7 @@
                <td class="style_white "><em><strong>Due</strong></em></td>
                <td class="style_white "><em><strong>Description</strong></em></td>
             </tr>
-           
+ <!--          
            <tr>	
                <td class="style_white "><em>1</em></td>
                <td class="style_white ">9/11/21</td>
@@ -61,7 +57,7 @@
                   
                
                <!--<strong><a href="https://github.com/CNUClasses/Project2_Intents.git"> Project 2</a></strong><br>-->
-                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/projects/Project2/Project_2_Implicit_intents_bitmap_manipulation_Toolbar_colorize_sketchify_takepicture.pdf"> Project 2 description</a></strong><br>
+ <!--                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/projects/Project2/Project_2_Implicit_intents_bitmap_manipulation_Toolbar_colorize_sketchify_takepicture.pdf"> Project 2 description</a></strong><br>
                   <strong><a href="https://github.com/CNUClasses/Project2_Solution_color_Appbar_SKELETON.git"> A skeleton project</a> Fill in the required bits</strong><br>
                   <strong><a href="https://drive.google.com/open?id=1idKCmM46FjRviMkyiYFqgJMAbhEcgrJT"> An apk demo of this project</a> Open this page on your device, then click on this link to install (You may have to allow installs from Google Drive). </strong><br>
                  
@@ -91,7 +87,7 @@
 <!--                 <strong style="color: #cc0000">
                  If you like you may work with a partner on this project.<br> 
                  </strong> -->
-             </td>
+ <!--            </td>
            </tr>
 
            <tr> 
@@ -105,14 +101,14 @@
                    If successful, the Image is returned as a BitMap.  Subclass this class, and check to make sure that the Bitmap received is the same as what was 
                    originally requested by the Viewholder. Assummig it is (and the returned Bitmap is named result, and the ImageView is named iv) 
                    <BR>se the following call to set the Bitmap to the ImageView; iv.setImageBitmap(result)-->
-                   <BR>
+ <!--                  <BR>
                       <br>
                       <strong>Call notifyDataSetChanged() on the adapter you are using for ViewPager2 whenever the underlying data changes. </strong> When this project first starts you should display a single placeholder page. After which you should download JSON from your selected website. 
                          Once you parse this JSON you have a different number of pages to display.   This is when you should call notifyDataSetChanged() on the adapter you are using for ViewPager2 <br>
 
              </td>
          </tr>
-            
+      -->           
         
            </table>
     </section>
