@@ -81,7 +81,22 @@
                   FileProvider Information<BR>
                   <strong><a href="https://developer.android.com/training/secure-file-sharing"> File Provider</a>A series of lessons on sharing files between Activities</strong><br>                 
                   <strong><a href="https://developer.android.com/reference/androidx/core/content/FileProvider"> Granting permission to a local file URI </a> Use this to allow the camera to save captured image to a named local storage URI without complex permission setup.  See week 3's explicit_implicit_intentdemo project for example usage. </strong><br>
-            
+                  <strong> Sharing an image</strong><BR>
+                     //After you've successfully manipulated a picture, you will want to share it.  Get a reference to your manipulated image using the file provider defined in the manifest:<br>
+                     //(processedfile is the original image that has been colorized and sketchified, you can get a reference to it using createImageFile)<BR>
+                     outputFileUri = FileProvider.getUriForFile(this,"com.example.solution_color.fileprovider", processedfile);<br>
+                     :<br>
+                     //create your intent<br>
+                     :<br>
+                     //attach the image to the intent<br>
+                     intent.putExtra(Intent.EXTRA_STREAM, outputFileUri);<br>
+                  
+                     
+
+
+
+
+
               </td>
             </tr>
  <!--          <tr>  
