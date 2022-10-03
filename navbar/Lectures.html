@@ -198,7 +198,7 @@
                 <strong ><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_6/In_Class_Lab_Create_Preference_App_and_Pref_Listener.docx" style="color: #00cc00"> In Class Demo -- Preference Activity, Preference Change Listener</a></strong>How to create a snazzy preference UI and how to set up your app to listen for changes to any of the defaultshared preferences (whether through the preference activity or via get getDefaultSharedPreferences<br/>
 
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_5/6_ToolBar_Dialog_Snackbar.pdf">ToolBars Dialogs and Snackbars </a></strong> Useful bits of UI, especially the ToolBar<br/>
-                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_6/6_ToolBar_with_Spinner_Checkbox_EditText_and_Data_Adapter.pdf">How to put a Spinner or Checkbox or EditText on a ToolBar</a></strong><br/><br/>
+                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_6/6_ToolBar_with_Spinner_Checkbox_EditText_and_Data_Adapter.pdf">How to put a Spinner or Checkbox or EditText on a ToolBar</a></strong> Useful to know, but can make the UI look a bit odd.<br/><br/>
 
                 <strong>Readings</strong><br>
                 <strong><a href="https://developer.android.com/training/appbar/index.html">Adding the Android AppBar</a></strong><br/>
@@ -231,39 +231,53 @@
            -->
            </td>
          </tr>
- <!--         <tr>
+         <tr>
             <td class="style_white "><em>7</em></td>
             <td class="style_white ">
+                <strong>Lectures</strong><br>
+                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_6/6-2_Threads_AsyncTask.pdf">Threads and AsyncTasks</a></strong><br/>
+               
+                <strong>Readings</strong><br>
                             
 
                 <strong><a href=" https://www.javamex.com/tutorials/threads/">Java Threads. All about Runnables and Threads in a straightforward tutorial series</a></strong> This is an excellent site for advanced java.  Go to the home page http://www.javamex.com/ for a good in-depth overview of Java topics.<br/>
                 <strong><a href=" https://developer.android.com/reference/android/os/AsyncTask.html">Android Async Tasks</a></strong> How to run background processes in a seperate thread while interacting (correctly) with the UI on the main thread.  Deprecated as of API 30 but easier to use than executors, java threads and runnables (We will do threads as well) .<br/> 
                 
-                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_6/6-2_Threads_AsyncTask.pdf">Threads and AsyncTasks</a></strong><br/>
+                 
                 
-                <strong style="color: #cc0000">Test, 10/15/21 will cover up through week 7 (this week) and Projects 1 and 2. You will write some code.  You may have 2 notes sheets, front and back. No other notes/books/computers<br>
-                Concentrate on Simple activities and widgets, no fragments. Know intents, starting activities (implicit/explicit), activity lifecycle, bundles, runtime permissions( concepts more than code),storage,  preferences, listeners, button click handlers.  Simple threads that update UI (use JAVA Threads)</strong> <BR>
-    
            
-                  <!-- <strong><a href="https://developer.android.com/topic/libraries/support-library/setup.html">Support Library Setup</a></strong> Android no longer supports downloading support libraries with the SDK manager.  If you need to update it (you will eventually) follow these instructions. <br/>
+                  <!-- DUMP ALL THIS?
+                    <strong><a href="https://developer.android.com/topic/libraries/support-library/setup.html">Support Library Setup</a></strong> Android no longer supports downloading support libraries with the SDK manager.  If you need to update it (you will eventually) follow these instructions. <br/>
                 <strong><a href="https://developer.android.com/topic/libraries/support-library/packages.html">Support Library Packages</a></strong> The packages offered by the support library <br/>
                 <strong><a href="https://dl.google.com/dl/android/maven2/index.html">What libraries are available</a></strong> The libraries and versions available at maven (click the + to expand the tree). Specify one of these in your build.gradle file, make sure maven is setup as per <a href="https://developer.android.com/topic/libraries/support-library/setup.html">Support Library Setup</a> and Android Studio will automatically fetch the library for you<br/> -->
                    
-<!--            </td>
+            </td>
             <td class="style_white ">
-                <strong><a href="https://github.com/CNUClasses/7_ThreadDemo.git" style="color: #00cc00">In Class Lab</a></strong>This application has a long running task on the UI thread (probable ANR), and does not handle rotations.  See below for 2 possible solutions<br>
-                <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git" style="color: #00cc00">In Class Lab-Solution 1- using AsyncTask and singleton<br/></a></strong>Using a singleton to hold thread and UI state when device is rotated<br>
+                Long running task on the UI thread cause a non-responsive UI and a probable 'Application not responding (ANR) error.<br>
+                Therefore all long running tasks should take place on a seperate thread.  See below projects for ANR demo<br>
+                <br>
+                Threads that are inner classes of an activity hold an implicit reference to their enclosing activity which prevents the activity from being garbage collected when the device is rotated and the activity is torn down and recreated.<br>
+                Fix this problem by making the threads static inner classes<br>
+                <br>
+                A larger problem is what happens to a thread when the device is rotated? Especially if the thread has a reference to any widgets in the activity that is being destroyed?<br>
+                You get a null pointer exception. Fix this by attaching and detaching a parent activity to a thread when needed.  But we are back to holding a reference to the activity and some fussy code to get right.<br>
+                <strong style="color: #00cc00">(We will fix this next week by using an Android singleton called a ViewModel, and something called Mutable live Data which is an Android implementation of the Observer Design pattern.)</strong><br><br>
+                But for now here are 2 projects that offer a basic android thread introduction.<br>
+                
+            
+
+                 <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git" style="color: #00cc00">In Class Lab using AsyncTask and singleton<br/></a></strong>Using a singleton to hold thread and UI state when device is rotated<br>
                     Demos: Attaching and detaching a thread to it's host activity (very important so as not to leak activity)<br> 
                     Using the singleton to hold the thread while activity is torn down and then recreated<br>
                     Using the singleton to manage UI button state while activity is torn down and recreated<br>
                     Also demos what happens to UI when a long running task takes place on main thread, triggers a ANR(Application Not Responding)<br>
 
-                    <strong><a href="https://github.com/CNUClasses/7_Thread.git" style="color: #00cc00">In Class Lab-Solution 2- using java thread and Singleton. </a></strong>Same as above except using a java Thread instead of an AsyncTask<br>
+                    <strong><a href="https://github.com/CNUClasses/7_Thread.git" style="color: #00cc00">In Class Lab using java threads and Singleton. </a></strong>Same as above except using a java Thread instead of an AsyncTask<br>
                     
                 <BR>
              </td>
         </tr>
-
+<!--
         <tr>
             <td class="style_white "><em>8</em></td>
             <td class="style_white ">                
