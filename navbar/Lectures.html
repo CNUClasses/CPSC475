@@ -256,12 +256,12 @@
                 Long running task on the UI thread cause a non-responsive UI and a probable 'Application not responding (ANR) error.<br>
                 Therefore all long running tasks should take place on a separate thread.  See below projects for ANR demo<br>
                 <br>
-                Threads that are inner classes of an activity hold an implicit reference to their enclosing activity which prevents the activity from being garbage collected when the device is rotated and the activity is torn down and recreated.<br>
+                Threads that are non-static inner classes of an activity hold an implicit reference to their enclosing activity which prevents the activity from being garbage collected when the device is rotated and the activity is torn down and recreated.<br>
                 Fix this problem by making the threads static inner classes<br>
                 <br>
-                A larger problem is what happens to a thread when the device is rotated? Especially if the thread has a reference to any widgets in the activity that is being destroyed?<br>
-                You get a null pointer exception. Fix this by attaching and detaching a parent activity to a thread when needed.  But we are back to holding a reference to the activity and some fussy code to get right.<br>
-                <strong style="color: #00cc00">(We will fix this next week by using an Android singleton called a ViewModel, and something called Mutable live Data which is an Android implementation of the Observer Design pattern.)</strong><br><br>
+                A larger problem is what happens to a thread when the device is rotated? If a thread trys to use a reference to a widget in the activity that is being destroyed it triggers a null pointer exception.<br>
+                Fix this by attaching and detaching a parent activity to a thread when needed.  But we are back to holding a reference to the activity and some very fussy code to get right.  Plus there is tight coupling between the thread and the activity
+                <strong style="color: #00cc00">(We will fix this problem next week by using an Android singleton called a ViewModel, and something called Mutable live Data which is an Android implementation of the Observer Design pattern.)</strong><br><br>
                 But for now here are 2 projects that offer a basic android thread introduction.<br>
 
             
