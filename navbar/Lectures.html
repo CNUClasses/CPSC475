@@ -254,7 +254,7 @@
             </td>
             <td class="style_white ">
                 Long running task on the UI thread cause a non-responsive UI and a probable 'Application not responding (ANR) error.<br>
-                Therefore all long running tasks should take place on a seperate thread.  See below projects for ANR demo<br>
+                Therefore all long running tasks should take place on a separate thread.  See below projects for ANR demo<br>
                 <br>
                 Threads that are inner classes of an activity hold an implicit reference to their enclosing activity which prevents the activity from being garbage collected when the device is rotated and the activity is torn down and recreated.<br>
                 Fix this problem by making the threads static inner classes<br>
@@ -263,7 +263,7 @@
                 You get a null pointer exception. Fix this by attaching and detaching a parent activity to a thread when needed.  But we are back to holding a reference to the activity and some fussy code to get right.<br>
                 <strong style="color: #00cc00">(We will fix this next week by using an Android singleton called a ViewModel, and something called Mutable live Data which is an Android implementation of the Observer Design pattern.)</strong><br><br>
                 But for now here are 2 projects that offer a basic android thread introduction.<br>
-                
+
             
 
                  <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git" style="color: #00cc00">In Class Lab using AsyncTask and singleton<br/></a></strong>Using a singleton to hold thread and UI state when device is rotated<br>
