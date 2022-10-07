@@ -236,16 +236,13 @@
             <td class="style_white ">
                 <strong>Lectures</strong><br>
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_6/6-2_Threads_AsyncTask.pdf">Threads and AsyncTasks</a></strong><br/>
-               
+                <strong ><a href=" style="color: #00cc00"> In Class Demo -- The social calculator</a></strong>  Demonstrates explicit and implicit intents, and shared preferences<br/>
+                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/javathreaddemo.pdf" style="color: #00cc00">In Class Lab using a Java Thread and a simple singleton- rough outline<br/></a></strong>
+ 
                 <strong>Readings</strong><br>
-                            
-
                 <strong><a href=" https://www.javamex.com/tutorials/threads/">Java Threads. All about Runnables and Threads in a straightforward tutorial series</a></strong> This is an excellent site for advanced java.  Go to the home page http://www.javamex.com/ for a good in-depth overview of Java topics.<br/>
                 <strong><a href=" https://developer.android.com/reference/android/os/AsyncTask.html">Android Async Tasks</a></strong> How to run background processes in a seperate thread while interacting (correctly) with the UI on the main thread.  Deprecated as of API 30 but easier to use than executors, java threads and runnables (We will do threads as well) .<br/> 
-                
-                 
-                
-           
+            
                   <!-- DUMP ALL THIS?
                     <strong><a href="https://developer.android.com/topic/libraries/support-library/setup.html">Support Library Setup</a></strong> Android no longer supports downloading support libraries with the SDK manager.  If you need to update it (you will eventually) follow these instructions. <br/>
                 <strong><a href="https://developer.android.com/topic/libraries/support-library/packages.html">Support Library Packages</a></strong> The packages offered by the support library <br/>
@@ -262,18 +259,19 @@
                 A larger problem is what happens to a thread when the device is rotated? If a thread trys to use a reference to a widget in the activity that is being destroyed it triggers a null pointer exception.<br>
                 Fix this by attaching and detaching a parent activity to a thread when needed.  But we are back to holding a reference to the activity and some very fussy code to get right.  Plus there is tight coupling between the thread and the activity
                 <strong style="color: #00cc00">(We will fix this problem next week by using an Android singleton called a ViewModel, and something called Mutable live Data which is an Android implementation of the Observer Design pattern.)</strong><br><br>
-                But for now here are 2 projects that offer a basic android thread introduction.<br>
-
-            
-
-                 <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git" style="color: #00cc00">In Class Lab using AsyncTask and singleton<br/></a></strong>Using a singleton to hold thread and UI state when device is rotated<br>
+                <br>
+                <strong><a href="https://github.com/CNUClasses/InClassThreadAndSingletonDEMO.git" style="color: #00cc00">In Class Lab using a Java Thread and a simple singleton<br/></a></strong>demonstrates common coding problems;
+                 what happens when device rotates while thread is running, an attempt to ensure thread contains reference to valid activity by hosting thread in a singleton, and demonstrates why there are still synchronization issues<br>
+                <br>
+                <br>
+                 
+                    <strong><a href="https://github.com/CNUClasses/7_Thread.git" >Java threads and Singleton. </a></strong>Using a singleton to hold thread and UI state when device is rotated<br>
                     Demos: Attaching and detaching a thread to it's host activity (very important so as not to leak activity)<br> 
                     Using the singleton to hold the thread while activity is torn down and then recreated<br>
                     Using the singleton to manage UI button state while activity is torn down and recreated<br>
                     Also demos what happens to UI when a long running task takes place on main thread, triggers a ANR(Application Not Responding)<br>
+                    <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git" >AsyncTask and singleton<br/></a></strong><br>Same as above except using AsyncTask instead of java Threads<br>
 
-                    <strong><a href="https://github.com/CNUClasses/7_Thread.git" style="color: #00cc00">In Class Lab using java threads and Singleton. </a></strong>Same as above except using a java Thread instead of an AsyncTask<br>
-                    
                 <BR>
              </td>
         </tr>
