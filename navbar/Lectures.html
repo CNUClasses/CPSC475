@@ -236,9 +236,8 @@
             <td class="style_white ">
                 <strong>Lectures</strong><br>
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_6/6-2_Threads_AsyncTask.pdf">Threads and AsyncTasks</a></strong><br/>
-                <strong ><a href=" style="color: #00cc00"> In Class Demo -- The social calculator</a></strong>  Demonstrates explicit and implicit intents, and shared preferences<br/>
-                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/javathreaddemo.pdf" style="color: #00cc00">In Class Lab using a Java Thread and a simple singleton- rough outline<br/></a></strong>
- 
+                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/javathreaddemo.pdf" style="color: #00cc00">In Class Lab using a Java Thread and a simple singleton- rough outline<br/></a></strong>
+                <br>
                 <strong>Readings</strong><br>
                 <strong><a href=" https://www.javamex.com/tutorials/threads/">Java Threads. All about Runnables and Threads in a straightforward tutorial series</a></strong> This is an excellent site for advanced java.  Go to the home page http://www.javamex.com/ for a good in-depth overview of Java topics.<br/>
                 <strong><a href=" https://developer.android.com/reference/android/os/AsyncTask.html">Android Async Tasks</a></strong> How to run background processes in a seperate thread while interacting (correctly) with the UI on the main thread.  Deprecated as of API 30 but easier to use than executors, java threads and runnables (We will do threads as well) .<br/> 
@@ -269,16 +268,25 @@
                     Demos: Attaching and detaching a thread to it's host activity (very important so as not to leak activity)<br> 
                     Using the singleton to hold the thread while activity is torn down and then recreated<br>
                     Using the singleton to manage UI button state while activity is torn down and recreated<br>
-                    Also demos what happens to UI when a long running task takes place on main thread, triggers a ANR(Application Not Responding)<br>
-                    <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git" >AsyncTask and singleton<br/></a></strong><br>Same as above except using AsyncTask instead of java Threads<br>
+                    Also demos what happens to UI when a long running task takes place on main thread, triggers a ANR(Application Not Responding)<br><br>
+                    <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git" >AsyncTask and singleton</a></strong><br>Same as above except using AsyncTask instead of java Threads<br>
 
                 <BR>
              </td>
         </tr>
-<!--
+
         <tr>
             <td class="style_white "><em>8</em></td>
-            <td class="style_white ">                
+            <td class="style_white ">  
+                <strong>Lectures</strong><br>  
+                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/WhyViewModel_and_Livedata.pdf" >Why use ViewModel and LiveData</a></strong> Outlines the advantages of using ViewModel, Livedata and Java Threads- specifically they decouple MainActivity from ViewModel at the expense of some complexity<br/>
+               
+                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/AsyncTask-ProgressdialogInClassDemo.pdf" style="color: #00cc00">In Class Lab - Async Task </a></strong> Using an Async task to run a background process, disabling the rest of the UI with an indeterminate progress dialog. Lab evolves to using ViewModel and LiveData and Java Threads.  The prefered solution (the third project to the right)<br><br>
+ 
+                <!-- Maybe not this time 
+                    <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_8/Classoutline_install_project_adb_usage_from_commandline_thread_sync .pdf">Outline</a></strong> Project 3 overview, using adb from the command line<br/> -->
+
+               <strong>Readings</strong><br>              
  
                 <strong><a href="https://sourcemaking.com/design_patterns/observer">Observer design pattern</a></strong> Decouples components, a subject manages data and notifies observers when that data changes, the heart of LiveView data<br/>
                 <strong><a href="https://developer.android.com/topic/libraries/architecture/viewmodel">ViewModel Overview</a></strong><br/>
@@ -286,41 +294,36 @@
                 <strong><a href="https://developer.android.com/topic/libraries/architecture/livedata" >LiveData overview</a></strong> How Android uses the observer software design pattern to host all relevant data in the ViewModel, automatically update the Activity when the data in the ViewModel changes, and decouple the ViewModel from the Activity. 
                 Using this method you don't have to worry about leaking the activity when its destroyed since threads no longer hold a reference to it.  The android framework manages all state adjustments associated with Activity configuration changes. 
                 <br>This operates much like a preference change listener which is notified when a change is made to a preference in a preference activity.<br/>
-               
-                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/Asynctask_InclassDemo_WhyViewModel_andLivedata.pdf" >Why use ViewModel and LiveData</a></strong> Outlines the advantages of using ViewModel, Livedata and Java Threads- specifically they decouple MainActivity from ViewModel at the expense of some complexity<br/>
-               
-                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/AsyncTask-ProgressdialogInClassDemo.pdf" style="color: #00cc00">In Class Lab - Async Task </a></strong> Using an Async task to run a background process, disabling the rest of the UI with an indeterminate progress dialog. Lab evolves to using ViewModel and LiveData and Java Threads.  The prefered solution (the third project to the right)<br/>
- 
-                <!-- Maybe not this time 
-                    <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_8/Classoutline_install_project_adb_usage_from_commandline_thread_sync .pdf">Outline</a></strong> Project 3 overview, using adb from the command line<br/> -->
-
                 
-<!--                </td>
+                 
+                </td>
             <td class="style_white ">
-                <strong><a href="https://github.com/CNUClasses/AsyncTask_simple.git" style="color: #00cc00">In Class Lab -Demo of AsyncTask - a better but still risky solution </strong><br/></a>
+                <!--DUMP these 2 projects?  No longer applicable 
+                    <strong><a href="https://github.com/CNUClasses/AsyncTask_simple.git" style="color: #00cc00">In Class Lab -Demo of AsyncTask - a better but still risky solution </strong><br/></a>
                   Using a ViewModel to host the asynctask, but must correctly attach and detach AsyncTasks reference to host activity when the activity is destroyed and recreated or the Garbage Collector cannot collect the activity until the AsyncTask exits.  
                   <strong>
                     Strong coupling between the Asynctask and the Activity! (very bad)<br>
-                  </strong>
+                  </strong> 
                 <strong><a href="https://github.com/CNUClasses/ViewModel_And_LiveData.git" style="color: #00cc00">In Class Lab -Demo using ViewModel, LiveData and AsyncTask</strong><br/></a>  
                 Have the Activity listen for changes in liveData objects in the ViewModel. These objects correspond to views in the Activity, but the AsyncTask and the ViewModel have no reference to the Activity.  
                 The Activity is updated by Observers listening for changes in the ViewModel.  No chance of leaking the activity.  No coupling between the Activity and the thread.<br>
                 <br>
-                <strong>
-                    AsyncTask was developed to ease worker thread and UI thread communication.  The ViewModel and LiveData method specificaly decouples the thread from the Activity so the Async
-                    Task's utility is now questionable.  Its a wrapper around thread anyway, why not dump it an use a plain thread?</strong>
-                </strong>
-                <br><br>
+                -->
 
                 <strong><a href="https://github.com/CNUClasses/ViewModel_LiveData_Thread.git" style="color: #00cc00">In Class Lab -Demo using ViewModel, LiveData and Java Thread - the reccomended Google way<br/></a> </strong> 
-                Same as above except using a java Thread instead of an AsyncTask<br>
+                Have the Activity listen for changes in liveData objects in the ViewModel. These objects correspond to views in the Activity, but the AsyncTask and the ViewModel have no reference to the Activity.
+                The Activity is updated by Observers listening for changes in the ViewModel.  No chance of leaking the activity.  No coupling between the Activity and the thread.<br>
+                <strong>
+                    BTW why Java threads instead of AsyncTask? AsyncTask was developed to ease worker thread and UI thread communication.  The ViewModel and LiveData method specificaly decouples the thread from the Activity which means their is no benefit to using Async
+                    Task.  Its a wrapper around thread anyway, why not dump it an use a plain thread?</strong>
+                </strong>
 
                     <!-- DEPRECATED do not use again <strong><a href="https://github.com/CNUClasses/MyApplication5.git" style="color: #00cc00">In Class Lab - Async Task Solution</a>></strong> Demo of asynctask, with a progress dialog to disable UI interaction, handling activity rotations by attaching and detaching to/from a host activity, and using onRetainCustomNonConfigurationInstance. <br/> -->
                     <!-- <strong><a href="https://github.com/CNUClasses/MyApplication5.git">Async Task 2</a></strong> Another demo of asynctask, with a determinate progressbar using asynctask publish progress to set the amount completed.<br/> -->
              
-<!--            </td>
+            </td>
         </tr>
-        <tr>
+ <!--       <tr>
             <td class="style_white "><em>9</em></td>
             <td class="style_white "> 
                  <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_9/9Networking2.pdf">Networking with http</a></strong> <br/>
