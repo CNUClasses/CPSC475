@@ -281,7 +281,8 @@
                 <strong>Lectures</strong><br>  
                 <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/WhyViewModel_and_Livedata.pdf" >Why use ViewModel and LiveData</a></strong> Outlines the advantages of using ViewModel, Livedata and Java Threads- specifically they decouple MainActivity from ViewModel at the expense of some complexity<br/>
                
-                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/JavaThread-ProgressdialogInClassDemo.pdf" style="color: #00cc00">In Class Lab - Java Threads </a></strong> Using Java Threads to run a background process, disabling the rest of the UI with an indeterminate progress dialog. Lab evolves to using ViewModel and LiveData as well as Java Threads.  This is googles prefered solution (see project to the right)<br><br>
+                <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_7/ViewModelLiveDataJavaThread.pdf" style="color: #00cc00">In Class Lab - Java Threads </a></strong> 
+                Using Java Threads, ViewModel and LiveData to run a background process.  Demonstrates complete decoupling between thread and activity, no more worries about synchronization between worker threads and main UI thread. (see project to the right)<br><br>
  
                 <!-- Maybe not this time 
                     <strong><a href="https://github.com/CNUClasses/CPSC475/blob/master/content/lectures/Week_8/Classoutline_install_project_adb_usage_from_commandline_thread_sync .pdf">Outline</a></strong> Project 3 overview, using adb from the command line<br/> -->
@@ -311,7 +312,7 @@
                 -->
 
                 <strong><a href="https://github.com/CNUClasses/ViewModel_LiveData_Thread.git" style="color: #00cc00">In Class Lab -Demo using ViewModel, LiveData and Java Thread - the reccomended Google way<br/></a> </strong> 
-                Have the Activity listen for changes in liveData objects in the ViewModel. These objects correspond to views in the Activity, but the AsyncTask and the ViewModel have no reference to the Activity.
+                Have the Activity listen for changes in liveData objects in the ViewModel. These objects correspond to views in the Activity, but the Java Thread and the ViewModel have no reference to the Activity.
                 The Activity is updated by Observers listening for changes in the ViewModel.  No chance of leaking the activity.  No coupling between the Activity and the thread.<br>
                 <strong>
                     BTW why Java threads instead of AsyncTask? AsyncTask was developed to ease worker thread and UI thread communication.  The ViewModel and LiveData method specificaly decouples the thread from the Activity which means their is no benefit to using Async
