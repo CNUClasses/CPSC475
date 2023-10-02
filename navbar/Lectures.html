@@ -273,6 +273,8 @@
                  Using the singleton to manage UI button state while activity is torn down and recreated<br>
                  Using a weak reference (substitute Updatetask_with_weakref for UpdateTask)<br>
                  <br>
+                 But none of these methods will work well, for example in UpdateTask, run method, what if act is detached and GCed between checking if act is null and dereferencing act? You crash.  You can synchronize this to ensure this does not happen but then you hold on to a destroyed activity just to manipulate no longer visible UI. A Weak reference is worse since there is no wy to synchronize with the GC.<br> 
+                 <br>
                 <br>
                  
                     <!-- REMOVE  <strong><a href="https://github.com/CNUClasses/7_Thread.git" >Java threads and Singleton. </a></strong>Using a singleton to hold thread and UI state when device is rotated<br>
