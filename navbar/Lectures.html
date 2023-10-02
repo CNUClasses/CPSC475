@@ -239,10 +239,10 @@
            </td>
          </tr>
           <tr>
-            <td class="style_white "><em>7</em></td>
+            <td class="style_white "><em>6,7</em></td>
             <td class="style_white ">
                 <strong>Lectures</strong><br>
-                <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_6/6-2_Threads.pdf">Java Threads and View Model Observer design pattern.</a></strong><br/>
+                <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_6/6-2_Threads.pdf">Java Threads and singleton and View Model (Androids singleton equivelant).</a></strong><br/>
                  <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_7/javathreaddemo.pdf" style="color: #00cc00">In Class Lab using a Java Thread and a simple singleton- rough outline<br/></a></strong>
                 <br>
                 <strong>Readings</strong><br>
@@ -264,7 +264,7 @@
                 <br>
                 A larger problem is what happens to a thread when the device is rotated? If a thread trys to use a reference to a widget in the activity that is being destroyed it triggers a null pointer exception.<br>
                 Fix this by attaching and detaching a parent activity to a thread when needed.  But we are back to holding a reference to the activity and some very fussy code to get right.  Plus there is tight coupling between the thread and the activity
-                <strong style="color: #00cc00">(We will fix this problem next week by using an Android singleton called a ViewModel, and something called Mutable live Data which is an Android implementation of the Observer Design pattern.)</strong><br><br>
+                <strong style="color: #00cc00">(We will fix this problem soon by using something called Mutable live Data which is an Android implementation of the Observer Design pattern.)</strong><br><br>
                 <br>
                 <strong><a href="https://github.com/CNUClasses/InClassThreadAndSingletonDEMO.git" style="color: #00cc00">In Class Lab using a Java Thread and a simple singleton<br/></a></strong>demonstrates common coding problems;
                  what happens when device rotates while thread is running, an attempt to ensure thread contains reference to valid activity by hosting thread in a singleton, and demonstrates why there are still synchronization issues<br>
