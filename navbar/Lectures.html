@@ -325,13 +325,13 @@
                 <br>
                 -->
 
-                <strong><a href="https://github.com/CNUClasses/ViewModel_LiveData_Thread.git" style="color: #00cc00">In Class Lab -Demo using ViewModel, LiveData and Java Thread - the reccomended Google way<br/></a> </strong> 
+                <strong><a href="https://github.com/CNUClasses/AndroidViewModelDemo.git" style="color: #00cc00">In Class Lab -Demo using ViewModel, LiveData and Java Thread - the reccomended Google way<br/></a> </strong> 
                 Have the Activity listen for changes in liveData objects in the ViewModel. These objects correspond to views in the Activity, but the Java Thread and the ViewModel have no reference to the Activity.
                 The Activity is updated by Observers listening for changes in the ViewModel.  No chance of leaking the activity.  No coupling between the Activity and the thread.<br>
-                <strong>
+                <!-- <strong>
                     BTW why Java threads instead of AsyncTask? AsyncTask was developed to ease worker thread and UI thread communication.  The ViewModel and LiveData method specificaly decouples the thread from the Activity which means their is no benefit to using Async
                     Task.  Its a wrapper around thread anyway, why not dump it an use a plain thread?</strong>
-                </strong>
+                </strong> -->
 
                     <!-- DEPRECATED do not use again <strong><a href="https://github.com/CNUClasses/MyApplication5.git" style="color: #00cc00">In Class Lab - Async Task Solution</a>></strong> Demo of asynctask, with a progress dialog to disable UI interaction, handling activity rotations by attaching and detaching to/from a host activity, and using onRetainCustomNonConfigurationInstance. <br/> -->
                     <!-- <strong><a href="https://github.com/CNUClasses/MyApplication5.git">Async Task 2</a></strong> Another demo of asynctask, with a determinate progressbar using asynctask publish progress to set the amount completed.<br/> -->
