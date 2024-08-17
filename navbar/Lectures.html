@@ -64,7 +64,7 @@
             </td>
         </tr>
 
-        <tr>
+<!--        <tr>
             <td class="style_white "><em>2</em></td>
             <td class="style_white ">
                 <strong>Lectures</strong><br>
@@ -72,7 +72,7 @@
                 <strong>Readings</strong><br>
                 <!--OBSOLETE- SAYS DONT USE APPLICATION OBJECT <strong><a href="https://github.com/codepath/android_guides/wiki/Understanding-the-Android-Application-Class"> Understanding the Android Application Class</a></strong><br/> -->
 
-                <strong><a href="http://rogerdudler.github.io/git-guide/">Git - the simple guide</a></strong><br/>  
+<!--                <strong><a href="http://rogerdudler.github.io/git-guide/">Git - the simple guide</a></strong><br/>  
                 <strong><a href="https://www.w3schools.com/xml/default.asp">XML Tutorial</a></strong> Use this if you are having trouble with Androids XML. YOU DO NOT HAVE TO BE AN XML EXPERT<br/>
                 <strong><a href="https://developer.android.com/guide/components/activities/intro-activities">Android Activities - Introduction</a></strong>Dont worry about permissions yet<br/>
                  <strong><a href="https://developer.android.com/guide/components/activities/activity-lifecycle.html">Android Activities - Life Cycle</a> </strong> Dont worry about navigating between activities yet<br/>
@@ -90,8 +90,8 @@
             <strong><a href="https://github.com/CNUClasses/2_Bundles.git">Bundles</a></strong> Usefull for saving serializable data (any object that implements the Serializable interface such as Integers, Bools, Lists, Arrays etc...). Bundles provide temporary state saving for rotations, falling down the activity stack etc. Also used to pass data between Activities.<br />
            
             <!-- Use singleton instead <strong><a href="https://github.com/CNUClasses/4_ApplicationObject2.git"> Application object</a></strong> Using the application object to store data between activity invocations <br />                   -->
-            <strong><a href="https://github.com/CNUClasses/SingletonDemo.git">Singleton design pattern</a></strong>  -->
-            Some objects cannot be serialized in a bundle (like a database connection) so they cannot use bundles to survive device rotations.  Use a singleton to hold these types of objects.  Once created, the singleton survives activity destruction and reconstruction.<br />
+<!--            <strong><a href="https://github.com/CNUClasses/SingletonDemo.git">Singleton design pattern</a></strong>  -->
+<!--            Some objects cannot be serialized in a bundle (like a database connection) so they cannot use bundles to survive device rotations.  Use a singleton to hold these types of objects.  Once created, the singleton survives activity destruction and reconstruction.<br />
 
             <strong><a href="https://github.com/CNUClasses/Use_logcat_to_debug_crash.git">THIS APP CRASHES WITH NO INDICATION WHY. USE LOGCAT TO EASILY SEE WHY.</a></strong> 
             This app will crash on startup with no hint as to why. Unless you look at logcat.  It tells you exactly why. In Android Studio: View->Tool Windows->Logcat<br />
@@ -109,7 +109,7 @@
 
                 <!-- <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_3/Animation_StepByStep.pdf" style="color: #00cc00"> Simple animation in class demo</a></strong><br/> -->
 
-                <br>
+<!--                <br>
                 <strong>Readings</strong><br>
                 <strong><a href="https://blog.aritraroy.in/what-my-2-years-of-android-development-have-taught-me-the-hard-way-52b495ba5c51" >Android Development best practices</a></strong>Old but still great professional development advice!<br/> 
                 <strong><a href="https://developer.android.com/guide/topics/ui/declaring-layout.html">Android Layouts</a></strong> Ignore section entitled 'Building Layouts with an Adapter' for now<br/>
@@ -117,17 +117,17 @@
                 <br>
                  <strong><a href="https://developer.android.com/guide/components/intents-filters.html"> Android-Intents and Intent filters</a></strong><br/>
                  <!-- <strong><a href="https://developer.android.com/training/animation/overview">Android Developer </a></strong>Animations overview, googles way.  Please be sure to look at projects; 'Unsplash' and 'ActivitySceneTransitionBasic' in the <a href="https://github.com/android/animation-samples.git">animation-samples</a> repository.<br/>                  -->
-                 <br>
+<!--                 <br>
             </td>
             <td class="style_white "> 
                 <!-- <strong><a href="https://github.com/CNUClasses/3_Animation_Demo.git">Animation Demo</a> </strong> <br />  -->
-                <strong><a href="https://github.com/CNUClasses/4_Explicit_Implicit_IntentDemo.git">Explicit_Implicit_IntentDemo</a></strong> Explicit and Implicit intent demos. Interapp communication between activities using bundles and intents. Also demonstrates implicit intents to have android serve up email, camera and barcode scanner (if installed) apps.  The camera portion demontrstes how to save a photo to a Media Store browsable directory so that pictures will show up in the device Google Photos app. And finally an application invocation via custom action. <br />          
+<!--                <strong><a href="https://github.com/CNUClasses/4_Explicit_Implicit_IntentDemo.git">Explicit_Implicit_IntentDemo</a></strong> Explicit and Implicit intent demos. Interapp communication between activities using bundles and intents. Also demonstrates implicit intents to have android serve up email, camera and barcode scanner (if installed) apps.  The camera portion demontrstes how to save a photo to a Media Store browsable directory so that pictures will show up in the device Google Photos app. And finally an application invocation via custom action. <br />          
                 <strong><a href="https://github.com/CNUClasses/4_CustomIntent_and_BogusEmail_App.git"> CustomIntent_and_BogusEmail_App</a></strong> that responds to a custom intent, and claims to handle email (it does not, but android will still present it asa an option in a chooser if installed) <br />
                 <strong><a href="https://github.com/CNUClasses/3_LayoutExample1.git"> Simple Layouts</a></strong> Linear,Frame,Grid,Table <br />
                 <!-- <strong><a href="https://github.com/CNUClasses/TipCalculator.git" style="color: #00cc00"> Tip calculator - in class demo, uses constraint-layout, radio buttons, and a switch </a></strong> XML based on <a href="https://developer.android.com/codelabs/basic-android-kotlin-training-xml-layouts?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-kotlin-unit-2-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-training-xml-layouts#1">this</a> tutorial.  The viewbinding comes from <a href="https://developer.android.com/codelabs/basic-android-kotlin-training-tip-calculator?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-kotlin-unit-2-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-training-tip-calculator#2">this</a> tutorial. <br /> -->
              
   
-            </td>
+<!--            </td>
         </tr>
         <tr>
             <td class="style_white "><em>4</em>                       
@@ -159,7 +159,7 @@
                 <strong>Lectures</strong><br>
                 <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_5/4-1_Persistence.pdf">Internal, external storage, Shared Preferences </a></strong><br/>
                  <!-- update this lecture noted on 2/18/20 -->
-                <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_5/5-1_Fragments.pdf">Android fragments, Settings Fragment </a></strong><br/>
+<!--                <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_5/5-1_Fragments.pdf">Android fragments, Settings Fragment </a></strong><br/>
  
                  <strong ><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_5/4-2_LAB_Intents_Social_Calculator_Shared_Prefs.pdf" style="color: #00cc00"> In Class Demo -- The social calculator</a></strong>  Demonstrates explicit and implicit intents, and shared preferences<br/>
                  <strong ><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_6/In_Class_Lab_Create_Preference_App_and_Pref_Listener.docx" style="color: #00cc00"> In Class Demo -- Preference Activity, Preference Change Listener</a></strong>How to create a snazzy preference UI and how to set up your app to listen for changes to any of the defaultshared preferences (whether through the preference activity or via get getDefaultSharedPreferences<br/>
@@ -176,7 +176,7 @@
                 <!-- <strong>116 Adding Fragments in Java Part 1 (search on this string for youtube video)</strong><br/>                 -->
                 <!-- <strong>117 Adding Fragments in Java Part 2(search on this string for youtube video)</strong><br/>              -->
             
-               <strong><a href="https://medium.com/google-developer-experts/exploring-android-jetpack-preferences-8bcb0b7bdd14">Exploring Android Jetpack: Preferences </a></strong><br/>
+<!--               <strong><a href="https://medium.com/google-developer-experts/exploring-android-jetpack-preferences-8bcb0b7bdd14">Exploring Android Jetpack: Preferences </a></strong><br/>
 
                 <strong><a href=" https://developer.android.com/training/multiscreen/screensizes">Support multiple Screen sizes</a></strong> How to create different layouts that target smaller screens (like phones) and larger screens (like tablets).  How to create portrait and landscape versions as well.<BR>               
             </td>
@@ -193,7 +193,7 @@
                 
  
                  <!-- ABOVE APP DOES ALL THIS NOW <strong><a href="https://github.com/CNUClasses/Settings_Activity_and_Preference_Change_Listener.git">Preference Activity, Preference Change Listener</a></strong>How to create a snazzy preference UI and how to set up your app to listen for changes to any of the defaultshared preferences (whether through the preference activity or via get getDefaultSharedPreferences<br/> -->
-            </td>
+<!--            </td>
         </tr>
       <tr>
         
@@ -215,7 +215,7 @@
 
                 <!-- This is an old project but does a good job of showing how various material design pieces tie together, needs to be ported to latest gradle and androidx <strong><a href="https://www.sitepoint.com/material-design-android-design-support-library/">Material Design layouts</a></strong> AppBar, NavigationView, FAB, Snackbar, TabLayout, CoordinatorLayout, CollapsingToolbarLayout...plus a githug repo for implementation.  Concentrate on AppBar and Snackbar for now.<br/>
                  -->
-                <strong><a href="https://developer.android.com/studio/projects/android-library">How to create and use your own libraries - both Java and Android</a></strong> Got some nifty reusable classes, like simple crypto, or image manipulation?  Then put them in a reusable module.  Here is how to create and consume both Java .jar and Android .aar libraries<br/>
+<!--                <strong><a href="https://developer.android.com/studio/projects/android-library">How to create and use your own libraries - both Java and Android</a></strong> Got some nifty reusable classes, like simple crypto, or image manipulation?  Then put them in a reusable module.  Here is how to create and consume both Java .jar and Android .aar libraries<br/>
           
 
                
@@ -232,7 +232,7 @@
                           
            <!-- ONLY uses relative widget positioning, not different activities targeted at different device sizes<strong><a href=" https://github.com/CNUClasses/Layout_that_looks_good_on_different_screen_sizes.git">Cat surrounded by hearts</a></strong> Check your layouts on multiple screen sizes in the Android Design View to ensure you have not hardcoded to one size (Class Example in response to issues with a few Program 1 solutions)<br/>
            -->
-           </td>
+<!--           </td>
          </tr>
           <tr>
             <td class="style_white "><em>6,7</em></td>
@@ -249,7 +249,7 @@
                     <strong><a href="https://developer.android.com/topic/libraries/support-library/setup.html">Support Library Setup</a></strong> Android no longer supports downloading support libraries with the SDK manager.  If you need to update it (you will eventually) follow these instructions. <br/>
                 <strong><a href="https://developer.android.com/topic/libraries/support-library/packages.html">Support Library Packages</a></strong> The packages offered by the support library <br/>
                 <strong><a href="https://dl.google.com/dl/android/maven2/index.html">What libraries are available</a></strong> The libraries and versions available at maven (click the + to expand the tree). Specify one of these in your build.gradle file, make sure maven is setup as per <a href="https://developer.android.com/topic/libraries/support-library/setup.html">Support Library Setup</a> and Android Studio will automatically fetch the library for you<br/> -->
-                <strong style="color: #cc0000">Test, 10/11/23 will cover everything above and Projects 1 and 2. You will write some code.  You may have 2 notes sheets, front and back. No other notes/books/computers<br>
+<!--                <strong style="color: #cc0000">Test, 10/11/23 will cover everything above and Projects 1 and 2. You will write some code.  You may have 2 notes sheets, front and back. No other notes/books/computers<br>
                     Concentrate on Simple activities and widgets, and fragments. Know intents, starting activities (implicit/explicit), activity lifecycle, bundles, runtime permissions( concepts more than code),storage,  preferences, listeners, button click handlers. Know the 2 UI thread rules.  Know how to launch a thread, and how the thread can safely interact with UI</strong> <BR>
             
             </td>
@@ -282,7 +282,7 @@
                     Also demos what happens to UI when a long running task takes place on main thread, triggers a ANR(Application Not Responding)<br><br>
                      <strong><a href="https://github.com/CNUClasses/7_AsyncTask.git" >AsyncTask and singleton</a></strong><br>Same as above except using AsyncTask instead of java Threads<br> -->
 
-                <BR>
+<!--                <BR>
              </td>
         </tr>
 
@@ -298,7 +298,7 @@
                 <!-- Maybe not this time 
                     <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_8/Classoutline_install_project_adb_usage_from_commandline_thread_sync .pdf">Outline</a></strong> Project 3 overview, using adb from the command line<br/> -->
 
-               <strong>Readings</strong><br>              
+<!--               <strong>Readings</strong><br>              
  
                 <strong><a href="https://developer.android.com/topic/libraries/architecture/viewmodel">ViewModel Overview</a></strong><br/>
              
@@ -322,7 +322,7 @@
                 <br>
                 -->
 
-                <strong><a href="https://github.com/CNUClasses/AndroidViewModelDemo.git" style="color: #00cc00">In Class Lab -Demo using ViewModel, LiveData and Java Thread - the reccomended Google way<br/></a> </strong> 
+<!--                <strong><a href="https://github.com/CNUClasses/AndroidViewModelDemo.git" style="color: #00cc00">In Class Lab -Demo using ViewModel, LiveData and Java Thread - the reccomended Google way<br/></a> </strong> 
                 Have the Activity listen for changes in liveData objects in the ViewModel. These objects correspond to views in the Activity, but the Java Thread and the ViewModel have no reference to the Activity.
                 The Activity is updated by Observers listening for changes in the ViewModel.  No chance of leaking the activity.  No coupling between the Activity and the thread.<br>
                 <!-- <strong>
@@ -333,7 +333,7 @@
                     <!-- DEPRECATED do not use again <strong><a href="https://github.com/CNUClasses/MyApplication5.git" style="color: #00cc00">In Class Lab - Async Task Solution</a>></strong> Demo of asynctask, with a progress dialog to disable UI interaction, handling activity rotations by attaching and detaching to/from a host activity, and using onRetainCustomNonConfigurationInstance. <br/> -->
                     <!-- <strong><a href="https://github.com/CNUClasses/MyApplication5.git">Async Task 2</a></strong> Another demo of asynctask, with a determinate progressbar using asynctask publish progress to set the amount completed.<br/> -->
              
-            </td>
+<!--            </td>
         </tr>
         <tr>
             <td class="style_white "><em>8,9</em></td>
@@ -341,7 +341,7 @@
                 <strong>Lectures</strong><br>  
                 <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_9/9Networking2.pdf">Networking with http</a></strong> <br/>
                <!--For project 3-->
-               <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_8/Project_3_outline.pdf">Project 3 outline</a></strong><br/>
+<!--               <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_8/Project_3_outline.pdf">Project 3 outline</a></strong><br/>
                <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_9/Networking_Text_Images_MutableliveData_Viewmodel_BUILD_GUIDE.pdf" style="color: #00cc00">In Class Lab</a></strong>Build the networking project to the right. <br/>
         
                <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_6/6_ToolBar_with_Spinner_Checkbox_EditText_and_Data_Adapter.pdf">How to put a Spinner or Checkbox or EditText on a ToolBar</a></strong> Useful to know, but can make the UI look a bit odd.<br/>
@@ -350,7 +350,7 @@
                <strong><a href="https://developer.android.com/studio/projects/android-library">Create an Android library</a> and 2 ways to link it to projects<br><br/>
                 <!-- <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_9/9_Android_create_and_use_a_library:.pdf">How to share utility libraries between projects.</a></strong> How to share a single copy of a library amongst multiple projects.  Its harder than it should be.  <br>           -->
 
-                <strong>Readings</strong><br>  
+<!--                <strong>Readings</strong><br>  
                 <strong><a href="https://developer.android.com/reference/android/net/NetworkCapabilities">NetworkCapabilities</a></strong>Detailed networking info that goes far beyond ConnectivityCheck<br>
                 <strong><a href="https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted">LEGACY: Android 8: Cleartext HTTP traffic not permitted</a></strong> Android API 28 has made it difficult to install networking apps that download plaintext (http verses https) plaintext, here is a workaround if you absolutely have to use it, otherwise use https: since most websites default to that anyway.<br/>
                 
@@ -358,7 +358,7 @@
                 <!-- skip for coronavirus semester 
                 <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_9/9_Samples_apps.pdf">Built in Android Sample Apps!</a></strong> How to use built in Android sample apps as a template for your project.<br/>
                 -->
-            </td> 
+<!--            </td> 
             <td class="style_white ">
                 <strong style="color: #cc0000">NOTE: All network traffic should occur on a seperate thread</strong><br/>
                 <strong><a href="https://github.com/CNUClasses/9_NetworkCheck.git">9_NetworkCheck</a></strong> Simple boolean class to determine if network and/or WiFi is reachable <br/>
@@ -371,7 +371,7 @@
                 -->
              
                
-            </td>
+<!--            </td>
         </tr> 
 
        <tr>
@@ -412,7 +412,7 @@
                 
                 <strong><a href="https://developer.android.com/guide/topics/sensors/sensors_overview.html">Android Sensors Overview</a></strong> <br/>
                 <!-- <strong><a href="http://www.vogella.com/tutorials/AndroidSensor/article.html">Sensors Tutorial</a></strong>Old but decent<br/> -->
-                <strong><a href="https://www.youtube.com/watch?v=fIWPSni7kUk">Sound Pool tutorial</a></strong> 12 minute video tutorial, how to use soundPool to play short sounds<br/>
+<!--                <strong><a href="https://www.youtube.com/watch?v=fIWPSni7kUk">Sound Pool tutorial</a></strong> 12 minute video tutorial, how to use soundPool to play short sounds<br/>
                 <strong ><a href="https://developer.android.com/guide/topics/media/mediaplayer#basics" >Media Player - Android developer woefully inadequate guide (should say emulatr does not work well, should emphasize asynchronous preparation of media stream)</a></strong><br/>
                  <strong><a href="https://developer.android.com/guide/topics/ui/notifiers/notifications.html">Android Notifications - Overview</a></strong> <br/>
                 <strong><a href="https://developer.android.com/training/notify-user/build-notification.html">Android Notifications - Building and Launching</a></strong> <br/>
@@ -421,7 +421,7 @@
                 <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_12/12_Project_5_How_to.pdf">Overview of the final project</a></strong> <br/>
                 -->
               <!-- <strong style="color: #00cc00"><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_12/In_Class_Lab-Broadcast_Receiver_Service_SMS.pdf" style="color: #00cc00">In Class Lab: A Broadcast Receiver that is triggered by the receipt of an SMS message.  It then starts a service which checks the SMS message for a particular phrase.  Design pattern similar to that used by 'find my phone' apps.  Many ethically questionable uses. <br/>   -->
-         </td>
+<!--         </td>
             <td class="style_white ">
                 <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/ViewPager3.git" style="color: #00cc00">In Class Lab: A simple Viewpager that morphs into a multithreaded ViewPager </a></strong>  Goes with in Class Lab to left <br/>            
 
@@ -445,12 +445,12 @@
             <strong><a href="https://developer.android.com/guide/components/broadcasts">Android Broadcast Receivers - Overview</a></strong> Note broadcast changes since Android 8.0  (API 26), specifically manifest declared broadcast receiver restrictions. <br/>
             <strong><a href="https://developer.android.com/guide/components/services">Services - Overview</a></strong> <br/> -->
 
-            <strong>Lectures</strong><br> 
+<!--            <strong>Lectures</strong><br> 
             <!-- <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_12/12_Services_And_Broadcast_receivers1.pdf">Broadcast Receivers and Services - Lecture notes</a></strong> <br/> -->
            <!--old but maybe still good? <strong style="color: #00cc00"><a href=
             "https://cnuclasses.github.io/CPSC475/content/lectures/Week_12/In_Class_Lab-Broadcast_Receiver_Service_SMS.pdf" style="color: #00cc00">In Class Lab: A Broadcast Receiver that is triggered by the receipt of an SMS message.  It then starts a service which checks the SMS message for a particular phrase.  Design pattern similar to that used by 'find my phone' apps.  Many ethically questionable uses. <br/> -->
 
-            <strong ><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_13/Location.pdf" >Location based services</a></strong> <br/>
+<!--            <strong ><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_13/Location.pdf" >Location based services</a></strong> <br/>
             <strong style="color: #00cc00"><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_13/In-Class-Lab_Making_A_Google_Maps_App.pdf" style="color: #00cc00">In Class Lab: Making a Google Maps App</a></strong> <br/><br>
           
  
@@ -465,12 +465,12 @@
  
                   <!-- <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/12_InClassLab_BR.git" style="color: #00cc00">In Class Lab: Solution.  <br/>  --> 
 
-           <strong ><a href="https://github.com/CNUClasses/14_Location.git" >Location Based services</a></strong> Using GPS, WiFi, Cellular and other location based services.  Also demonstrates using geoCoder to map from GPS coordinates to address and vice versa.<br/> 
+<!--           <strong ><a href="https://github.com/CNUClasses/14_Location.git" >Location Based services</a></strong> Using GPS, WiFi, Cellular and other location based services.  Also demonstrates using geoCoder to map from GPS coordinates to address and vice versa.<br/> 
             <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/MapsApp.git" style="color: #00cc00">Google Maps Demo Project</a></strong> Make sure you go to google_maps_api.xml file and read directions on aquiring a key to access map tiles!<br/><br>
            
             <!--           <strong ><a href="https://cnuclasses.github.io/CPSC475/content/Testing_Project_Max_Wayne.zip" >Grad Presentation:  Testing in Android, zipped project</a></strong> <br/>
  -->
-            </td>
+<!--            </td>
         </tr> 
 
         
@@ -527,7 +527,7 @@
                 <strong ><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_14/gradstudentstuff/ds_firebase/Firebase_demo_walkthrough.pdf" >Tutorial</a></strong>A step-by-step guide to creating a Firebase Cloud Messaging enabled app from scratch<br/> 
                 <strong ><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_14/gradstudentstuff/ds_firebase/teamtalk.apk" >A more sophisticated example</a></strong>Install on your Android device before class.  Shows off how Firebase Cloud Messaging, and other Firebase tools can be harnessed to help create a full-fledged communication application. Allows in person communication, team member discovery and UI customization. <br/>  -->
             
-             </td>
+<!--             </td>
             <td class="style_white ">
                 <strong ><a href="https://github.com/rafael-diaz7/nfc-cpsc575">Grad Presentation 1:  Near-Field Communication (NFC) Sample Project</a></strong> by Rafael Diaz-Cruz & Josh Luzier <br/>
   
@@ -538,8 +538,8 @@
                              
             </td>
         -->       
-    </tr> 
-
+<!--    </tr> 
+-->
 
 
         </table>
