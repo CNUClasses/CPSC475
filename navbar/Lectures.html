@@ -414,7 +414,13 @@
         </td>
             <td class="style_white ">
                 <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/ViewPager3.git" style="color: #00cc00">In Class Lab: A simple Viewpager that morphs into a multithreaded ViewPager </a></strong>  Goes with in Class Lab to left <br/>            
+                <strong style="color: #00cc00"><a href="https://github.com/CNUClasses/ViewPager2_Thread_DataVM_MutableLiveData" style="color: #00cc00"> A multithreaded ViewPager thats rotation proof</a></strong>  
+                
+                ViewModel hosts threadsafe cache(scache). Holds hard to get resources (in this case the images). 
+                RecyclerView.Adapter queries ViewModel.getimage(..).  This function either gets the image from scache or launches a thread to get the image.  
+                Thread uses MutableLiveData and an observer in MainActivity to trigger the  RecyclerView.Adapter to update itself via notifyDataSetChanged()<br/>            
 
+                
                   <strong ><a href="https://github.com/CNUClasses/11_GetSensorList1.git" >Sensors - List All</a></strong> Use SensorManager system service to query for complete sensor list, some sensor characteristics, and display this information in a listview.  Does not work as well on emulated device, use <a href="https://drive.google.com/file/d/1gUU4tbftxd9t_MbNFky0uTDhywkDuyUR/view?usp=sharing">this</a> link to install on physical device. <br/> 
                  
                 <strong ><a href="https://github.com/CNUClasses/11_acceleration_test.git" >Sensors - Acceleration Test</a></strong> Use onResume and onPause to register/unregister listeners for TYPE_ACCELEROMETER sensor events. Receive and process sensor change events <br/> 
@@ -423,20 +429,20 @@
           
                 
                 <strong ><a href="https://github.com/CNUClasses/13_Timer.git" >Alarms and AlarmManager</a></strong> Demonstrates a simple alarm using AlarmManager<br/> 
- 
+
             </td>
         </tr> 
- <!--      <tr>
+  <!--    <tr>
             <td class="style_white "><em>12</em></td>
             <td class="style_white "> 
             <strong>Readings</strong><br>   
             <!-- REWRITE services and broadcast receivers, consider API restrictions on broadcast receivers, take advantage of Jobscheduler --> 
-           <!-- <strong><a href="https://developer.android.com/guide/background">Android- Guide to background processing</a></strong> Which to use? DownloadManager, Service, ForegroundManager, AlarmManager? This guide helps you choose. <br/>
+ <!--           <strong><a href="https://developer.android.com/guide/background">Android- Guide to background processing</a></strong> Which to use? DownloadManager, Service, ForegroundManager, AlarmManager? This guide helps you choose. <br/>
             <strong><a href="https://developer.android.com/guide/components/broadcasts">Android Broadcast Receivers - Overview</a></strong> Note broadcast changes since Android 8.0  (API 26), specifically manifest declared broadcast receiver restrictions. <br/>
             <strong><a href="https://developer.android.com/guide/components/services">Services - Overview</a></strong> <br/> -->
 
-<!--            <strong>Lectures</strong><br> 
-            <!-- <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_12/12_Services_And_Broadcast_receivers1.pdf">Broadcast Receivers and Services - Lecture notes</a></strong> <br/> -->
+ <!--            <strong>Lectures</strong><br> 
+            <strong><a href="https://cnuclasses.github.io/CPSC475/content/lectures/Week_12/12_Services_And_Broadcast_receivers1.pdf">Broadcast Receivers and Services - Lecture notes</a></strong> <br/>
            <!--old but maybe still good? <strong style="color: #00cc00"><a href=
             "https://cnuclasses.github.io/CPSC475/content/lectures/Week_12/In_Class_Lab-Broadcast_Receiver_Service_SMS.pdf" style="color: #00cc00">In Class Lab: A Broadcast Receiver that is triggered by the receipt of an SMS message.  It then starts a service which checks the SMS message for a particular phrase.  Design pattern similar to that used by 'find my phone' apps.  Many ethically questionable uses. <br/> -->
 
